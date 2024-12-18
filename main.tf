@@ -21,8 +21,9 @@ resource "github_repository" "github-create-repo" {
   description = "Github-repo"
   visibility = "public"
 }
-
+/*
 // module to pull repo
 module "github_repo" {
   source = "github.com/AboElmagd6300/DolfinedProject-repo.git"
 }
+*/
