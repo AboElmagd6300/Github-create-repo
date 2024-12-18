@@ -16,8 +16,8 @@ provider "github" {
 }
 
 //Resource Block
-resource "github_repository" "DolfinedProject-repo2" {
-  name = "Github-repo"
+resource "github_repository" "github-create-repo" {
+  name = "Github-create-repo"
   description = "Github-repo"
   visibility = "public"
 }
