@@ -15,9 +15,14 @@ provider "github" {
   token = var.token
 }
 
-//Resource Block
+//Resource Block to add repo
 resource "github_repository" "github-create-repo" {
   name = "Github-create-repo"
   description = "Github-repo"
   visibility = "public"
+}
+
+// module to pull repo
+module "github_repo" {
+  source = "github.com/AboElmagd6300/DolfinedProject-repo.git"
 }
